@@ -49,6 +49,35 @@
         </div>
 
     </section>
+    <div class="main">
+        <div class="row">
+            <li><img src="imagens/main1.png" onclick="slider('imagens/product1.png')"></li>
+
+        </div>
+        <div class="row2">
+            <li><img src="imagens/main2.png" onclick="slider('imagens/product2.png')"></li>
+
+        </div>
+        <div class="row3">
+            <li><img src="imagens/main3.png" onclick="slider('imagens/product3.png')"></li>
+
+        </div>
+
+    </div>
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+        let menu = document.querySelector ('#menu-icon');
+        let navbar = document.querySelector ('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle ('bx-x');
+            navbar.classList.toggle ('open');
+        }
+        
+    </script>
     
 </body>
 </html>
